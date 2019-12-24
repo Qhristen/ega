@@ -1,0 +1,79 @@
+@font-face{
+    src: url("../font/PlayfairDisplay-Black.ttf");
+    font-family: Playfair Display;
+}
+
+@font-face{
+    src: url("../font/PlayfairDisplay-Regular.ttf");
+    font-family: Playfair;
+}
+
+
+h3{
+    color:  black;
+}
+
+.con{
+    position: relative;
+    width: 100%;
+    height: 0%;  
+    background-color: rgb(0, 62, 112);
+    overflow: hidden;
+}
+
+/* .overlay{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    opacity: .5;
+    overflow: hidden;
+    justify-content: center;
+} */
+.patricles{
+    opacity: .5;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+caption{
+    font-family: "Playfair";
+    position: absolute;
+    top: 30%;
+    color: blanchedalmond;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+caption > h1{
+    font-size: 60px;
+    font-family: "Playfair Display";
+    line-height: 4rem;
+}
+
+caption > h3{
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+    color: blanchedalmond;
+    line-height: 2rem;
+}
+.c-img > img{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    width: 550px;
+    height: 350px;
+
+}
+
+button{
+    position: absolute;
+    top: 400px;
+
+}
+.btn{
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: bolder;
+}

@@ -1,0 +1,23 @@
+.al{
+    font-family: monospace;
+    font-variant-caps: unicase;
+    margin-top: 45px;
+}
+
+.Ex{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color:rgb(0, 62, 112);
+}
+
+.card-grid{
+    display: flex;
+}
+
+.bg{
+    background-color: white;
+}
+
+
+
