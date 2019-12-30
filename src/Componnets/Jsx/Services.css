@@ -12,18 +12,21 @@
     color: white;
 }
 
+
 .card-body{
-    background:#100e17;
-    border: 1px;
-    margin: 4px;
+    background:#242130;
+    color: azure;
     
+}
+
+.card{
+    background:#100e17;
+    margin: 10px;
+    display: flexbox;
+
 }
 
 .bg{
     background-color: #312d3c;
-}
-
-.bb{
-    border: none;
 }
 

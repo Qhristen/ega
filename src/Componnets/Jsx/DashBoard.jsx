@@ -51,7 +51,7 @@ const DashPage = () => {
           
         </Col>
         <Col sm={9} className="col-props">
-          <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+          <div data-spy="scroll" data-target="#list-example" data-offset="0" className="scrollspy-example">
             <div id="Services"> <Services /> </div>
             <p>...</p>
             <div id="Work"><Works /></div>

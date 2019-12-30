@@ -46,14 +46,19 @@ caption{
     overflow: hidden;
 }
 
+caption > h6{
+    font-family: monospace; 
+    font-size: 15px;
+    color: #9d9da7;
+}
 caption > h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Playfair Display";
-    line-height: 4rem;
+    line-height: 3.5rem;
 }
 
 caption > h3{
-    font-family: 'Trebuchet MS';
+    font-family: "Playfair";
     font-size: 40px;
     color: blanchedalmond;
     line-height: 2rem;
@@ -69,7 +74,7 @@ caption > h3{
 
 .H-Button{
     position: absolute;
-    top: 400px;
+    top: 430px;
     color: #9d9da7;
     text-transform: uppercase;
     background: none;
