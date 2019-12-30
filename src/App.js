@@ -5,7 +5,7 @@ import Home from './Componnets/Jsx/Home';
 import Services from './Componnets/Jsx/Services';
 import Experience from './Componnets/Jsx/Experience';
 import Works from './Componnets/Jsx/Works';
-import DashPage from './Componnets/Jsx/DashPage';
+import DashBoard from './Componnets/Jsx/DashBoard';
 
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/Experience" component={Experience} />
         <Route path="/Services" component={Services} />
         <Route path="/Works" component={Works} />
-        <Route path="/DashPage" component={DashPage} />
+        <Route path="/DashBoard" component={DashBoard} />
 
       </Switch>
     </Router>

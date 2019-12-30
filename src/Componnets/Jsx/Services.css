@@ -2,22 +2,28 @@
     font-family: monospace;
     font-variant-caps: unicase;
     margin-top: 45px;
+    color: white;
 }
 
 .Ex{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
-    color:rgb(0, 62, 112);
+    color: white;
 }
 
-.card-grid{
-    display: flex;
+.card-body{
+    background:#100e17;
+    border: 1px;
+    margin: 4px;
+    
 }
 
 .bg{
-    background-color: white;
+    background-color: #312d3c;
 }
 
-
+.bb{
+    border: none;
+}
 

@@ -7,11 +7,18 @@ export default class Services extends Component {
     render() {
         return (
             <Jumbotron className="bg">
+                
                 <div className="container">
                     <h4 className="al">WHAT I DO?</h4>
                     <h3 className="Ex">HERE ARE SOME OF MY <br /> EXPERTISE</h3>
+                   
+                   
                     <div className="card-grid">
-                        <Card style={{ width: '18rem' }}>
+
+                   
+
+
+                        <Card style={{ width: '10rem' }} className="bb">
                             {/* <MDBIcon icon="camera-retro" size="2x"/> */}
                             <Card.Body>
                                 <Card.Title>INNOVATIVE IDEAS</Card.Title>
@@ -21,7 +28,7 @@ export default class Services extends Component {
                              </Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '10rem' }}>
                             <span class="icon2"><i class="icon-data"></i></span>
                             <Card.Body>
                                 <Card.Title>SOFTWARE</Card.Title>
@@ -32,7 +39,7 @@ export default class Services extends Component {
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '10rem' }}>
                             <span class="icon2"><i class="icon-data"></i></span>
                             <Card.Body>
                                 <Card.Title>GRAPHIC DESIGN</Card.Title>
@@ -43,7 +50,7 @@ export default class Services extends Component {
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '10rem' }}>
                             <span class="icon2"><i class="icon-data"></i></span>
                             <Card.Body>
                                 <Card.Title>APPLICATION</Card.Title>

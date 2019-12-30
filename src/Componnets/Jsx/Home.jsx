@@ -42,8 +42,8 @@ const Home = () => {
                     <h1>Front-End <br /> Web Developer</h1>
                 </caption>
 
-                <Link to="/DashPage" >
-                    <Button variant="info">
+                <Link to="/DashBoard" >
+                    <Button className="H-Button">
                         portfolio
                     </Button>
                 </Link>
