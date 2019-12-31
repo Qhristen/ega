@@ -2,9 +2,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: #100e17;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a, link{
+  color: linear-gradient(90deg,#ff8a00,#e52e71);
 }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Grid.css';
+import '../Css/Grid.css';
 import NavBar from './NavBar';
 import {Row, Col} from 'react-bootstrap';
 import Home from './Home';

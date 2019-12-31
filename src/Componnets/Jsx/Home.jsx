@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../Css/Home.css';
 import Particles from 'react-particles-js';
 import dev1 from '../img/dev2.svg';
 import { Button } from 'react-bootstrap';
