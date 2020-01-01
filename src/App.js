@@ -17,7 +17,8 @@ const App = () => {
         <Route path="/Experience" component={Experience} />
         <Route path="/Services" component={Services} />
         <Route path="/Works" component={Works} />
-        <Route path="/DashBoard" component={DashBoard} />
+        <Route path="/DashBoard" exact component={DashBoard} />
+        <Route path="/DashBoard/:id" component={DashBoard} />
 
       </Switch>
     </Router>
