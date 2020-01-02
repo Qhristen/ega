@@ -44,7 +44,7 @@ const DashPage = () => {
             <Particles params={paticlesOpt} />
           </div>
           <div className="list-prop">
-          <NavLink className="list-group-item list-group-item-action list" to="/">Home</NavLink>
+          <NavLink className="list-group-item list-group-item-action list" to="/" >Home</NavLink>
           <a className="list-group-item list-group-item-action list" href="#Services">About</a>
           <a className="list-group-item list-group-item-action list" href="#Services">Services</a>
           <a className="list-group-item list-group-item-action" href="#Work">My Works</a>
