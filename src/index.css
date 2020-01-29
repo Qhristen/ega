@@ -1,6 +1,16 @@
+
 @font-face{
   src: url("/font/CHICAGO_.TTF");
   font-family: Chicago;
+}
+@font-face{
+  src: url("/font/PlayfairDisplay-Black.ttf");
+  font-family: Playfair Display;
+}
+
+@font-face{
+  src: url("/font/PlayfairDisplay-Regular.ttf");
+  font-family: Playfair;
 }
 
 
@@ -101,8 +111,9 @@ padding: 30px;
 }
 
 .ega-name{
-  font-family: Chicago;
+  font-family: Playfair Display;
   font-weight: bolder;
+  font-size: 3.5rem;
   color: antiquewhite;
   
 }

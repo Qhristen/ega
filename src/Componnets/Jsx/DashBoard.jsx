@@ -5,7 +5,7 @@ import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Profile from './Profile';
 import { Tab, Tabs } from 'react-bootstrap';
-import SimpleBar from 'simplebar-react';
+// import SimpleBar from 'simplebar-react';
 
 
 const DashPage = () => {

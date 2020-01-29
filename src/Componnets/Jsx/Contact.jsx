@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react';
 import '../Css/Contact.css';
 import { Jumbotron } from 'react-bootstrap';
 
 
-class Contact extends Component {
-    render () {
+const Contact = () =>{
         return (
             <Jumbotron className="bg">
                 <h1 className="h1-c">Contact</h1>
@@ -20,14 +19,14 @@ class Contact extends Component {
                         <textarea className="form-control"  placeholder="Message" id="exampleFormControlTextarea1" rows="8"/>
                         </div>
                         <div className="col-md-5">
-                        <button type="submit" class="btn btn-primary mb-2">Send</button>
+                        <button type="submit" className="btn btn-primary mb-2">Send</button>
 
                         </div>
                     </div>
                 </form>
             </Jumbotron>
         )
-    }
+    
 }
 
 export default Contact;
