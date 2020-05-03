@@ -5,8 +5,8 @@ import logo from '../img/logo.svg';
 
 
 
-export default class NavBar extends Component {
-  render() {
+ const NavBar = () => {
+
     return (
       <div>
         <Navbar fixed="top" className="m-3">
@@ -20,13 +20,19 @@ export default class NavBar extends Component {
               className="d-inline-block align-top"
               alt="Ega"
               />
+              
           </Navbar.Brand>
               </Link>
+
           </div>
         </Navbar>
+
+        
 
       </div>
 
     )
-  }
+  
 }
+
+export default NavBar;

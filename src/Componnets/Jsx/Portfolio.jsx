@@ -1,77 +1,60 @@
-import React from 'react'
-import { Jumbotron, Card, Button, Row, Col } from 'react-bootstrap';
-import SimpleBar from 'simplebar-react';
+import React, { useState } from "react";
+import { Row, Col, Container } from "react-bootstrap";
+import home from "../img/mhome.jpg";
+import pc from "../img/mpc.jpg";
+import CardDetails from "./CardDetails";
+import Modal from "./modal";
 
 const Portfolio = () => {
-    return (
-        <Jumbotron>
-            <SimpleBar style={{maxHeight: 400}}>
-            <h1 className="h1-c">PORTFOLIO</h1>
-            <Row>
-            <Col sm={3}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+  const [projects, setProject] = useState([
+    {
+      name: "PortFolio",
+      about: "My PortFolio Made with react",
+      image: pc,
+    },
+    {
+      name: "Medos",
+      about: "made",
+      image: pc,
+    },
+    {
+      name: "Text to Writting",
+      about: "react",
+      image: pc,
+    },
+  ]);
 
-            </Col>
+  const [show, setShow] = useState(false);
 
-            <Col sm={3}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-
-            </Col>
-
-
-            <Col sm={3}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-
-            </Col>
-
-            <Col sm={3}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-
-            </Col>
-            </Row>
-            </SimpleBar>
-        </Jumbotron>
-    )
-}
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  return (
+    <div>
+      <h1 className="h1-c">PORTFOLIO</h1>
+      <div style={{ textAlign: "center" }}>
+        {projects.map((project, index) => {
+          return (
+            <>
+              <Modal
+                click={handleShow}
+                close={handleClose}
+                show={show}
+                project={project}
+              />
+              <Container>
+                <CardDetails
+                  index={index}
+                  project={project}
+                  show={handleShow}
+                />
+              </Container>
+            </>
+          );
+        })}
+        s
+      </div>
+    </div>
+  );
+};
 
 export default Portfolio;
