@@ -1,31 +1,29 @@
-import React from 'react';
-import { ProgressBar, Row, Col, Jumbotron } from 'react-bootstrap';
-
+import React from "react";
+import { Jumbotron } from "react-bootstrap";
 
 const Resume = () => {
-    return (
-
-        <div>
-      
-       
-                <Jumbotron>
-
-
-                    <h5>EMPLOYMENT HISTORY</h5>
-                    <ul>
-                        <li>
-                    <p>Graphic Designer/Developer at Bulletin Press Limited, Abuja <br />
-                    <span>November 2014 - January 2018</span> </p>
-                        </li>
-                    </ul>
-                    
-                    </Jumbotron>
-
-
-</div>
-
-
-    )
-}
+  return (
+    <div>
+      <Jumbotron>
+        <h5>EXPERIENCE</h5>
+        <ul>
+          <li>
+            <p>
+              <h6>
+                Bulletin Press Limited --
+                <span> 2014 - 2018</span>{" "}
+              </h6>
+              <ul>
+                <li>Development and matainance of web applications</li>
+                <li>UI/UX Design</li>
+                <li> Design and Printing of flyer, Magazine & Book cover</li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </Jumbotron>
+    </div>
+  );
+};
 
 export default Resume;

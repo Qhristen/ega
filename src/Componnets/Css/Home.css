@@ -1,22 +1,19 @@
-@font-face{
-    src: url("../font/PlayfairDisplay-Black.ttf");
-    font-family: Playfair Display;
+@font-face {
+  src: url("../font/PlayfairDisplay-Black.ttf");
+  font-family: Playfair Display;
 }
 
-@font-face{
-    src: url("../font/PlayfairDisplay-Regular.ttf");
-    font-family: Playfair;
+@font-face {
+  src: url("../font/PlayfairDisplay-Regular.ttf");
+  font-family: Playfair;
 }
 
-
-
-h3{
-    color:  black;
+h3 {
+  color: black;
 }
 
-.con{
-    position: relative;
-
+.con {
+  position: relative;
 }
 
 /* .overlay{
@@ -29,105 +26,97 @@ h3{
     overflow: hidden;
     justify-content: center;
 } */
-.patricles{
-    opacity: .5;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.patricles {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-caption{
-    font-family: "Playfair";
-    position: absolute;
-    top: 30%;
-    color: blanchedalmond;
-    font-weight: bolder;
-    overflow: hidden;
-}
-
-caption > h6{
-    font-family: monospace; 
-    font-size: 15px;
-    color: #9d9da7;
-}
-caption > h1{
-    font-size: 80px;
-    font-family: "Playfair Display";
-    line-height: 4.5rem;
+caption {
+  font-family: "Playfair";
+  position: absolute;
+  top: 30%;
+  color: blanchedalmond;
+  font-weight: bolder;
+  overflow: hidden;
 }
 
-caption > h3{
-    font-family: "Playfair";
-    font-size: 40px;
-    color: blanchedalmond;
-    line-height: 2rem;
+caption > h6 {
+  font-family: monospace;
+  font-size: 15px;
+  color: #9d9da7;
 }
-.c-img > img{
-    position: absolute;
-    top: 100px;
-    right: 150px;
-    width: 550px;
-    height: 350px;
-
-}
-.btn-primary{
-    padding: 20px;
+caption > h1 {
+  font-size: 80px;
+  font-family: "Playfair Display";
+  line-height: 4.5rem;
 }
 
-.H-Button{
-    position: absolute;
-    top: 380px;
-    color: #9d9da7;
-    text-transform: uppercase;
-    background: none;
-    font-weight: bolder;
-    font-size: 20px;
-    white-space: nowrap;
-    border: 3px solid #28242f;
-    border-radius: 3rem;
-
+caption > h3 {
+  font-family: "Playfair";
+  font-size: 40px;
+  color: blanchedalmond;
+  line-height: 2rem;
+}
+.c-img > img {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  width: 550px;
+  height: 350px;
+}
+.btn-primary {
+  padding: 20px;
 }
 
-.H-Button:hover{
-    border: 4px solid #fff;
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
+.H-Button {
+  position: absolute;
+  top: 380px;
+  color: #9d9da7;
+  text-transform: uppercase;
+  background: none;
+  font-weight: bolder;
+  font-size: 20px;
+  white-space: nowrap;
+  border: 3px solid #28242f;
+  border-radius: 3rem;
 }
 
+.H-Button:hover {
+  border: 4px solid #fff;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+}
 
 @media screen and (max-width: 768px) {
-    caption{
-        top: 50%;
-        margin: 20px;
-       
-    }
-    caption > h6{
-        font-size: 10px;
-      
-    }
-    caption > h1{
-        font-size: 53px;
-        line-height: 2.8rem;
-    }
-    
-    caption > h3{
-        font-size: 30px;
-    }
+  caption {
+    top: 50%;
+    margin: 20px;
+  }
+  caption > h6 {
+    font-size: 10px;
+  }
+  caption > h1 {
+    font-size: 53px;
+    line-height: 2.8rem;
+  }
 
-    .H-Button{
-        top: 450px;
-        width: 270px;
-        align-content: center;
-        margin: 4px;
-        height: 50x;
-        margin: 20px;        
+  caption > h3 {
+    font-size: 30px;
+  }
 
-    }
+  .H-Button {
+    top: 450px;
+    width: 270px;
+    align-content: center;
+    margin: 4px;
+    height: 50x;
+    margin: 20px;
+  }
 
-    .c-img > img{
-      left: 50px;
-      right: 50px;
-        width: 210px;
-        height: 250px;
-    
-    }
-
+  .c-img > img {
+    left: 50px;
+    right: 50px;
+    width: 210px;
+    height: 250px;
+  }
 }

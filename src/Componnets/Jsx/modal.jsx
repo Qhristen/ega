@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal } from "react-bootstrap";
-// import Modal from "./modal";
 
-const modal = ({ click, close, show, project }) => {
+const modal = ({ close, show, project }) => {
   return (
-    <div>
-      <Modal show={show} onHide={close}>
+    <div key={project.id}>
+      <Modal show={show === project.id} onHide={close}>
         <Modal.Header closeButton>
           <Modal.Title> {project.name} </Modal.Title>
         </Modal.Header>
-        <img variant="top" height="300" src={project.image} />
+        <img
+          variant="top"
+          height="300"
+          src={project.image}
+          alt={project.name}
+        />
         <Modal.Body> {project.about} </Modal.Body>
       </Modal>
     </div>

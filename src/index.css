@@ -146,13 +146,15 @@ ul,
 h6 {
   color: #9d9da7;
 }
-
+.card-flex:first-child {
+  flex: 0 1 100%;
+}
 @media screen and (max-width: 768px) {
   .left-tabs {
     display: none !important;
   }
 
-  .proj-card {
-    display: grid;
+  .card-flex {
+    display: grid !important;
   }
 }

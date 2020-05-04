@@ -2,7 +2,7 @@ import React from "react";
 import "../Css/Home.css";
 import Particles from "react-particles-js";
 import figure from "../img/egafff.svg";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
 
@@ -20,7 +20,7 @@ const paticlesOpt = {
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <div className="con">
         <div className="patricles">
           <Particles params={paticlesOpt} />
@@ -29,22 +29,21 @@ const Home = () => {
       <div className="c-img">
         <img src={figure} alt="dev" />
       </div>
-      <div className="container">
-        <caption>
-          <h3>Hi, </h3>
-          <Typical
-            steps={["I Design", 1000, "I Develop", 500]}
-            loop={Infinity}
-            wrapper="h1"
-          />
-          {/* <h6>Front End Web Developer / UI/UX Designer</h6> */}
-        </caption>
 
-        <Link to="/DashBoard">
-          <Button className="H-Button">Learn more about what i do</Button>
-        </Link>
-      </div>
-    </div>
+      <caption className="container">
+        <h3>Hi, </h3>
+        <Typical
+          steps={["I Design", 1000, "I Develop", 500]}
+          loop={Infinity}
+          wrapper="h1"
+        />
+        {/* <h6>Front End Web Developer / UI/UX Designer</h6> */}
+      </caption>
+
+      <Link to="/DashBoard">
+        <Button className="H-Button">Learn more about what i do</Button>
+      </Link>
+    </Container>
   );
 };
 

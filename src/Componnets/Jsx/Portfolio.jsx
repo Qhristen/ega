@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Row, Col, Container } from "react-bootstrap";
-import home from "../img/mhome.jpg";
+import React, { useState, useEffect } from "react";
 import pc from "../img/mpc.jpg";
 import CardDetails from "./CardDetails";
-import Modal from "./modal";
+import { Jumbotron } from "react-bootstrap";
 
 const Portfolio = () => {
   const [projects, setProject] = useState([
@@ -11,49 +9,67 @@ const Portfolio = () => {
       name: "PortFolio",
       about: "My PortFolio Made with react",
       image: pc,
+      id: 1,
     },
     {
       name: "Medos",
       about: "made",
       image: pc,
+      id: 2,
     },
     {
       name: "Text to Writting",
       about: "react",
       image: pc,
+      id: 3,
+    },
+    {
+      name: "jgdf",
+      about: "rebvccact",
+      image: pc,
+      id: 4,
+    },
+    {
+      name: "jgdf",
+      about: "rebvccact",
+      image: pc,
+      id: 4,
     },
   ]);
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(null);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (e, id) => setShow(id);
   return (
-    <div>
+    <Jumbotron style={{ overflow: "hidden" }}>
       <h1 className="h1-c">PORTFOLIO</h1>
-      <div style={{ textAlign: "center" }}>
-        {projects.map((project, index) => {
+
+      <div
+        className="card-flex"
+        style={{
+          display: "flex",
+          // flexWrap: "wrap",
+          alignContent: "center",
+          flexBasis: "auto",
+          flex: "1 0 50%",
+        }}
+      >
+        {projects.map((project) => {
           return (
-            <>
-              <Modal
-                click={handleShow}
+            <div key={project.id}>
+              <CardDetails
+                key={project.id}
                 close={handleClose}
-                show={show}
                 project={project}
+                show={show}
+                click={(e) => handleShow(e, project.id)}
               />
-              <Container>
-                <CardDetails
-                  index={index}
-                  project={project}
-                  show={handleShow}
-                />
-              </Container>
-            </>
+            </div>
           );
         })}
-        s
       </div>
-    </div>
+    </Jumbotron>
   );
 };
 

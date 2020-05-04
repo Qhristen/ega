@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Css/Contact.css";
-import pc from "../img/mpc.jpg";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faTwi } from "@fortawesome/free-solid-svg-icons";
-import { Jumbotron, Row, Col } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 
 const Contact = () => {
   return (
     <Jumbotron className="bg">
-      {/* <FontAwesomeIcon icon={faPlusCircle} className="font-prop mt-3 mb-3" /> */}
+      <p>
+        Abuja, Nigeria <br />
+        (234) 8090990653 <br />
+        odeyxtian@gmail.com <br />
+        Nationality: <br />
+        Nigerian.
+      </p>{" "}
     </Jumbotron>
   );
 };
