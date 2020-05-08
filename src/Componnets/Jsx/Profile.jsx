@@ -17,7 +17,7 @@ const Resume = () => {
 
             <h5>PROFILE</h5>
             <p>
-              Am a Software Developer who adept in bringing forth expertise in
+              Am a Software Engineer who adept in bringing forth expertise in
               design, installation, testing and maintenance of software systems.
               Equipped with a diverse and promising skill-set. Proficient in
               various platforms, languages. Experienced with the latest cutting
@@ -46,8 +46,8 @@ const Resume = () => {
             <ProgressBar striped variant="info" now={75} />
             <h6>REACT</h6>
             <ProgressBar striped variant="info" now={70} />
-            <h6>GIT</h6>
-            <ProgressBar striped variant="info" now={90} />
+            <h6>NODE</h6>
+            <ProgressBar striped variant="info" now={75} />
             <h6>MONGO</h6>
             <ProgressBar striped variant="info" now={70} />
             <h6>FIGMA</h6>

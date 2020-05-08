@@ -77,7 +77,13 @@ link {
   width: 10%;
   contain: layout;
 }
+.accordion > .card {
+  margin: 0.5%;
+}
 
+.card-body {
+  padding: 1rem;
+}
 .card {
   position: relative;
   display: flex;
@@ -85,7 +91,7 @@ link {
   margin: 10%;
   color: #9d9da7;
   word-wrap: break-word;
-  background-color: rgb(8, 11, 27);
+  background-color: rgb(19, 23, 41);
   background-clip: border-box;
   border-radius: 0.25rem;
 }
@@ -108,9 +114,9 @@ link {
 }
 
 .card:hover {
-  background: white;
+  background: rgb(8, 11, 27);
   cursor: pointer;
-  color: black;
+  color: wheat;
   border: none;
 }
 
@@ -131,12 +137,22 @@ link {
 .bg-info {
   background: linear-gradient(90deg, #ff8a00, #e52e71) !important;
 }
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: rgb(146, 111, 35);
+  display: none;
+}
 
 h5 {
   font-weight: bolder;
   color: rgb(146, 111, 35);
 }
 
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+.navbar-toggler {
+  border: 1px solid wheat !important;
+}
 h6 {
   margin-top: 10px;
   margin-bottom: 3px;
@@ -146,14 +162,28 @@ ul,
 h6 {
   color: #9d9da7;
 }
-.card-flex:first-child {
-  flex: 0 1 100%;
+.card-flex {
+  /* flex-wrap: wrap; */
+  flex-direction: row;
 }
+
 @media screen and (max-width: 768px) {
   .left-tabs {
     display: none !important;
   }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: grid;
+  }
 
+  .nav-link {
+    border-radius: 0;
+    border: none;
+    background: #111111;
+    font-weight: normal;
+  }
+  .mr-auto {
+    float: right;
+  }
   .card-flex {
     display: grid !important;
   }

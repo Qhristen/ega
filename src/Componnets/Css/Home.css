@@ -60,9 +60,8 @@ caption > h3 {
 }
 .c-img > img {
   position: absolute;
-  top: 100px;
+  top: 150px;
   right: 150px;
-  width: 550px;
   height: 350px;
 }
 .btn-primary {
@@ -112,11 +111,15 @@ caption > h3 {
     height: 50x;
     margin: 20px;
   }
-
   .c-img > img {
-    left: 50px;
-    right: 50px;
-    width: 210px;
-    height: 250px;
+    top: 100px;
+    right: 80px;
+    height: 200px;
+  }
+  .patricles {
+    top: 150px;
+    opacity: 0.5;
+    width: 50%;
+    height: 50%;
   }
 }

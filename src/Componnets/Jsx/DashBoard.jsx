@@ -5,46 +5,48 @@ import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Profile from "./Profile";
 import { Tab, Col, Nav, Row } from "react-bootstrap";
+
 // import SimpleBar from 'simplebar-react';
 
 const DashPage = () => {
+  const key = [1, 2, 3, 4];
   return (
     <div className="container">
       <div className="T-top" fixed="top">
         <Tab.Container
           className="T-top"
           id="left-tabs-example"
-          defaultActiveKey="first"
+          defaultActiveKey={key[0]}
         >
           <Row>
             <Col sm={3} sticky="top" className="left-tabs">
               <Nav variant="pills" className="flex-column">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">PROFILE</Nav.Link>
+                  <Nav.Link eventKey={key[0]}>PROFILE</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">EXPERIENCE</Nav.Link>
+                  <Nav.Link eventKey={key[1]}>EXPERIENCE</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">PORTFOLIO</Nav.Link>
+                  <Nav.Link eventKey={key[2]}>PORTFOLIO</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="forth">CONTACT</Nav.Link>
+                  <Nav.Link eventKey={key[3]}>CONTACT</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
             <Col sm={9}>
               <Tab.Content>
-                <Tab.Pane eventKey="first">
+                <Tab.Pane eventKey={key[0]}>
                   <Profile />
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
+                <Tab.Pane eventKey={key[1]}>
                   <Resume />
                 </Tab.Pane>
-                <Tab.Pane eventKey="third">
+                <Tab.Pane eventKey={key[2]}>
                   <Portfolio />
                 </Tab.Pane>
-                <Tab.Pane eventKey="forth">
+                <Tab.Pane eventKey={key[3]}>
                   <Contact />
                 </Tab.Pane>
               </Tab.Content>
@@ -52,24 +54,6 @@ const DashPage = () => {
           </Row>
         </Tab.Container>
       </div>
-
-      {/* 
-    <div className="containers fixed-top"  fixed="top">
-<Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-  <Tab eventKey="profile" title="Profile" >
-    <Profile />
-  </Tab>
-  <Tab eventKey="resume" title="Resume">
-  <Resume />
-  </Tab>
-  <Tab eventKey="portfolio" title="Portfolio">
-    <Portfolio />
-  </Tab>
-  <Tab eventKey="contact" title="Contact">
-    <Contact />
-  </Tab>
-</Tabs>
-    </div> */}
     </div>
   );
 };

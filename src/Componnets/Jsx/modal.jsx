@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Modal, Image } from "react-bootstrap";
 
 const modal = ({ close, show, project }) => {
   return (
@@ -8,7 +8,7 @@ const modal = ({ close, show, project }) => {
         <Modal.Header closeButton>
           <Modal.Title> {project.name} </Modal.Title>
         </Modal.Header>
-        <img
+        <Image
           variant="top"
           height="300"
           src={project.image}

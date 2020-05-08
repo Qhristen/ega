@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import pc from "../img/mpc.jpg";
+import TextWrite from "../img/TEXTWRITE.gif";
 import CardDetails from "./CardDetails";
 import { Jumbotron } from "react-bootstrap";
 
 const Portfolio = () => {
-  const [projects, setProject] = useState([
+  const projects = [
     {
       name: "PortFolio",
       about: "My PortFolio Made with react",
@@ -14,28 +15,22 @@ const Portfolio = () => {
     {
       name: "Medos",
       about: "made",
-      image: pc,
+      image: TextWrite,
       id: 2,
     },
     {
       name: "Text to Writting",
       about: "react",
-      image: pc,
+      image: TextWrite,
       id: 3,
     },
     {
       name: "jgdf",
       about: "rebvccact",
-      image: pc,
+      image: TextWrite,
       id: 4,
     },
-    {
-      name: "jgdf",
-      about: "rebvccact",
-      image: pc,
-      id: 4,
-    },
-  ]);
+  ];
 
   const [show, setShow] = useState(null);
 
@@ -43,8 +38,7 @@ const Portfolio = () => {
   const handleShow = (e, id) => setShow(id);
   return (
     <Jumbotron style={{ overflow: "hidden" }}>
-      <h1 className="h1-c">PORTFOLIO</h1>
-
+      <h5 className="">PORTFOLIO</h5>
       <div
         className="card-flex"
         style={{
@@ -52,7 +46,6 @@ const Portfolio = () => {
           // flexWrap: "wrap",
           alignContent: "center",
           flexBasis: "auto",
-          flex: "1 0 50%",
         }}
       >
         {projects.map((project) => {

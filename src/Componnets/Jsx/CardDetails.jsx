@@ -6,7 +6,7 @@ const CardDetails = ({ click, close, show, project }) => {
     <div key={project.id}>
       <Row>
         <Col sm={15} className="roma">
-          <Card>
+          <Card style={{ margin: "0.5%" }}>
             <Card.Img variant="top" src={project.image} />
             <Card.Body>
               <Card.Title> {project.name} </Card.Title>

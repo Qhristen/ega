@@ -1,8 +1,8 @@
 import React from "react";
 import "../Css/Home.css";
 import Particles from "react-particles-js";
-import figure from "../img/egafff.svg";
-import { Button, Container } from "react-bootstrap";
+import ega from "../img/ega.jpg";
+import { Button, Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
 
@@ -27,7 +27,7 @@ const Home = () => {
         </div>
       </div>
       <div className="c-img">
-        <img src={figure} alt="dev" />
+        <Image src={ega} alt="dev" roundedCircle />
       </div>
 
       <caption className="container">
