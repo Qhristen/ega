@@ -53,8 +53,14 @@ caption > h1 {
 }
 
 caption > h3 {
-  font-family: "Playfair";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 40px;
+  color: blanchedalmond;
+  line-height: 2rem;
+}
+caption > h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
   color: blanchedalmond;
   line-height: 2rem;
 }
@@ -96,7 +102,7 @@ caption > h3 {
   }
   caption > h1 {
     font-size: 53px;
-    line-height: 2.8rem;
+    line-height: 3rem;
   }
 
   caption > h3 {
@@ -104,7 +110,7 @@ caption > h3 {
   }
 
   .H-Button {
-    top: 450px;
+    top: 520px;
     width: 270px;
     align-content: center;
     margin: 4px;

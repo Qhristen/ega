@@ -31,11 +31,14 @@ const Home = () => {
       </div>
 
       <caption className="container">
-        <h3>Hi, </h3>
+        <h3>I'm </h3>
+        <h1>
+          EGAGA <br /> CHRISTIAN
+        </h1>
         <Typical
-          steps={["I Design", 1000, "I Develop", 500]}
+          steps={["SOFTWARE ENGINEER", 1000, "DESIGNER", 500]}
           loop={Infinity}
-          wrapper="h1"
+          wrapper="h4"
         />
         {/* <h6>Front End Web Developer / UI/UX Designer</h6> */}
       </caption>
