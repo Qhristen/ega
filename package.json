@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "http://Qhristen.github.io/ega",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "bootstrap": "^4.3.1",
     "bootstrap-icons": "^1.0.0-alpha3",
     "gh-pages": "^2.2.0",
@@ -14,6 +18,7 @@
     "react-dom": "^16.12.0",
     "react-easy-flip": "^3.0.0",
     "react-fontawesome": "^1.7.1",
+    "react-mailto": "^0.4.0",
     "react-media": "^1.10.0",
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.1.2",

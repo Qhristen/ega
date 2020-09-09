@@ -1,38 +1,56 @@
 import React from "react";
-import "../Css/Contact.css";
-import FontAwesome from "react-fontawesome";
-import { ArrowsMove } from "react-bootstrap-icons";
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTwi } from "@fortawesome/free-solid-svg-icons";
-import { Jumbotron, Row, Col } from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelopeOpenText} from "@fortawesome/free-solid-svg-icons";
+import {Form, Container, Row, Col, Button} from "react-bootstrap";
+import Mailto from "./Mailto";
 
 const Contact = () => {
   return (
-    <Jumbotron className="bg">
-      <Row>
-        <Col>
-          <p>
-            Abuja, Nigeria <br />
-            (234) 8090990653 <br />
-            odeyxtian@gmail.com <br />
-            Nationality: <br />
-            Nigerian.
-          </p>{" "}
-        </Col>
-        <Col>
-          <ArrowsMove />
-          <FontAwesome
-            className="super-crazy-colors"
-            name="rocket"
-            size="2x"
-            spin
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+    <Container>
+      <div className="inCon">
+        {/* <Form>
+          <Form.Control size="lg" placeholder="Name" />
+
+          <Form.Control size="lg" type="email" placeholder="Email" />
+
+          <Form.Control
+            as="textarea"
+            placeholder="Message"
+            style={{height: "260px"}}
+            row="8"
           />
-          Twitter facebook linkedin git
-        </Col>
-      </Row>
-    </Jumbotron>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form> */}
+        <Mailto email="odeyxtian@gmail.com" subject="From Portfolio">
+          <FontAwesomeIcon className="contact-icon" icon={faEnvelopeOpenText} />{" "}
+        </Mailto>
+
+        <FontAwesomeIcon
+          onClick={() => (window.location = "https://github.com/Qhristen")}
+          className="contact-icon"
+          icon={["fab", "github"]}
+        />
+
+        <FontAwesomeIcon
+          onClick={() => (window.location = "https://twitter.com/qhristen")}
+          className="contact-icon"
+          icon={["fab", "twitter"]}
+        />
+
+        <FontAwesomeIcon
+          onClick={() => (window.location = "https://github.com/Qhristen")}
+          className="contact-icon"
+          icon={["fab", "linkedin"]}
+        />
+
+        <FontAwesomeIcon className="contact-icon" icon={["fab", "dev"]} />
+
+        <FontAwesomeIcon className="contact-icon" icon={["fab", "facebook"]} />
+      </div>
+    </Container>
   );
 };
 

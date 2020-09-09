@@ -1,5 +1,5 @@
 import React from "react";
-import { ProgressBar, Row, Col, Jumbotron } from "react-bootstrap";
+import { Row, Col, Jumbotron } from "react-bootstrap";
 
 const Resume = () => {
   return (
@@ -9,49 +9,34 @@ const Resume = () => {
       <Row>
         <Col sm={6}>
           <Jumbotron>
-            <h1 className="ega-name">
-              Egaga <br />
-              Christian
-            </h1>
-            <h6 className="front-end">SOFTWARE ENGINEER / DESIGNER</h6>
-
             <h5>PROFILE</h5>
             <p>
-              Am a Software Engineer who adept in bringing forth expertise in
-              design, installation, testing and maintenance of software systems.
-              Equipped with a diverse and promising skill-set. Proficient in
-              various platforms, languages. Experienced with the latest cutting
-              edge development tools and procedures. Able to effectively
-              self-manage during independent projects, as well as collaborate as
-              part of a productive team.
+              Am a front end developer who adept in bringing forth expertise in
+              web development, design, installation, testing and maintenance of
+              software systems. Equipped with a diverse and promising skill-set.
+              Proficient in various platforms, languages. Experienced with the
+              latest cutting edge development tools and procedures. Able to
+              effectively self-manage during independent projects, as well as
+              collaborate as part of a productive team.
             </p>
           </Jumbotron>
         </Col>
         <Col sm={6}>
           <Jumbotron>
-            <h5>DETAILS</h5>
-            <p>
-              Abuja, Nigeria <br />
-              (234) 8090990653 <br />
-              odeyxtian@gmail.com <br />
-              Nationality: <br />
-              Nigerian.
-            </p>
+            <div className="skills">
+              <h5>SKILLS</h5>
 
-            <h6>HTML</h6>
-            <ProgressBar striped variant="info" now={80} />
-            <h6>CSS</h6>
-            <ProgressBar striped variant="info" now={75} />
-            <h6>JAVASCRIPT</h6>
-            <ProgressBar striped variant="info" now={75} />
-            <h6>REACT</h6>
-            <ProgressBar striped variant="info" now={70} />
-            <h6>NODE</h6>
-            <ProgressBar striped variant="info" now={75} />
-            <h6>MONGO</h6>
-            <ProgressBar striped variant="info" now={70} />
-            <h6>FIGMA</h6>
-            <ProgressBar striped variant="info" now={80} />
+              <li>JAVASCRIPT</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>REACT</li>
+              <li>NODE</li>
+              <li>MONGO</li>
+              <li>FIGMA</li>
+              <li>ADOBE ILLUSTRATOR</li>
+              <li>Adobe XD</li>
+              <li>ADOBE PHOTOSHOP</li>
+            </div>
           </Jumbotron>
         </Col>
       </Row>

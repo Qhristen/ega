@@ -1,29 +1,16 @@
 import React from "react";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import {Card, Button, Row, Col} from "react-bootstrap";
 import Modal from "./modal";
-const CardDetails = ({ click, close, show, project }) => {
+const CardDetails = ({click, close, show, project}) => {
   return (
-    <div key={project.id}>
-      <Row>
-        <Col sm={15} className="roma">
-          <Card style={{ margin: "0.5%" }}>
-            <Card.Img variant="top" src={project.image} />
-            <Card.Body>
-              <Card.Title> {project.name} </Card.Title>
-
-              <Modal
-                key={project.id}
-                close={close}
-                show={show}
-                project={project}
-              />
-              <Button variant="primary" onClick={click}>
-                View Details
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+    <div key={project.id} className="recent-item">
+      <Modal key={project.id} close={close} show={show} project={project} />
+      <Card onClick={click}>
+        <Card.Img variant="top" src={project.image} />
+        {/* <Card.Body>
+          <Card.Title> {project.name} </Card.Title>
+        </Card.Body> */}
+      </Card>
     </div>
   );
 };

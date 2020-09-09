@@ -1,10 +1,9 @@
 import React from "react";
-import "../Css/DashBoard.css";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Profile from "./Profile";
-import { Tab, Col, Nav, Row } from "react-bootstrap";
+import {Tab, Col, Nav, Row} from "react-bootstrap";
 
 // import SimpleBar from 'simplebar-react';
 
@@ -25,7 +24,7 @@ const DashPage = () => {
                   <Nav.Link eventKey={key[0]}>PROFILE</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey={key[1]}>EXPERIENCE</Nav.Link>
+                  <Nav.Link eventKey={key[1]}>RESUME</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey={key[2]}>PORTFOLIO</Nav.Link>

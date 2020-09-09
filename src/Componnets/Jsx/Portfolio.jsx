@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import pc from "../img/mpc.jpg";
 import TextWrite from "../img/TEXTWRITE.gif";
+import Medos from "../img/medos.gif";
+import Estimator from "../img/estimator.gif";
 import CardDetails from "./CardDetails";
 import { Jumbotron } from "react-bootstrap";
 
@@ -9,25 +10,26 @@ const Portfolio = () => {
     {
       name: "PortFolio",
       about: "My PortFolio Made with react",
-      image: pc,
+      image: Medos,
+      git: "url",
       id: 1,
     },
     {
       name: "Medos",
-      about: "made",
-      image: TextWrite,
+      about: "My coffe todo list",
+      image: Medos,
       id: 2,
     },
     {
       name: "Text to Writting",
-      about: "react",
+      about: "Text to writting covert typed text to handwritting",
       image: TextWrite,
       id: 3,
     },
     {
-      name: "jgdf",
-      about: "rebvccact",
-      image: TextWrite,
+      name: "Covid-19 Estimator",
+      about: "Estimate for covid-19",
+      image: Estimator,
       id: 4,
     },
   ];
