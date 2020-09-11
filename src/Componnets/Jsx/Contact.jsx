@@ -1,8 +1,8 @@
 import React from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelopeOpenText} from "@fortawesome/free-solid-svg-icons";
-import {Form, Container, Row, Col, Button} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import Mailto from "./Mailto";
 
 const Contact = () => {

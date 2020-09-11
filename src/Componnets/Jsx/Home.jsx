@@ -1,14 +1,12 @@
 import React, {useState} from "react";
 import {Element} from "react-scroll";
-import {Container, Image} from "react-bootstrap";
-import Typical from "react-typical";
+// import {Container, Image} from "react-bootstrap";
+// import Typical from "react-typical";
 import Projects from "./Projects";
 import CardDetails from "./CardDetails";
 import Contact from "./Contact";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
-  faPlusCircle,
-  faShippingFast,
   faShoppingCart,
   faUserAlt,
   faPalette,
@@ -141,7 +139,7 @@ const Home = () => {
         <div className="contact">
           <h3 className="contact-header">Get in touch</h3>
           <Contact />
-          <p className="footer"> &copy; Christen {new Date().getFullYear()} </p>
+          <p className="footer"> &copy; {new Date().getFullYear()} </p>
         </div>
       </Element>
     </div>

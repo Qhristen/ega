@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Button, Row, Col} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import Modal from "./modal";
 const CardDetails = ({click, close, show, project}) => {
   return (
