@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Element} from "react-scroll";
 // import {Container, Image} from "react-bootstrap";
 // import Typical from "react-typical";
 import Projects from "./Projects";
 import CardDetails from "./CardDetails";
 import Contact from "./Contact";
+import $ from "jquery";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
@@ -18,6 +19,11 @@ const Home = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = (e, id) => setShow(id);
+
+  useEffect(() => {
+    $(".navbar").fadeIn();
+  }, []);
+
   return (
     <div>
       <Element name="home" className="element">
@@ -54,9 +60,10 @@ const Home = () => {
               "java",
               "spotify",
               "wix",
-            ].map((icon) => (
+            ].map((icon, i) => (
               <div className="skill-item-list">
                 <FontAwesomeIcon
+                  key={icon}
                   className="skill-icon"
                   icon={["fab", `${icon}`]}
                 />
@@ -120,7 +127,7 @@ const Home = () => {
         <div className="recent-work">
           <h3 className="recent-work-header">Recent Projects</h3>
           <div className="recent-work-item container">
-            {Projects.map((project) => (
+            {Projects.map((project, i) => (
               <CardDetails
                 key={project.id}
                 close={handleClose}

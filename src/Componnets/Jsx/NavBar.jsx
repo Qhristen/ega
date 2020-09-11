@@ -7,12 +7,7 @@ import {Link} from "react-scroll";
 const NavBar = () => {
   return (
     <div>
-      <Navbar
-        fixed="top"
-        style={{color: "rgb(114, 111, 111)"}}
-        collapseOnSelect
-        expand="lg"
-      >
+      <Navbar fixed="top" collapseOnSelect expand="lg">
         <Link to={"/"}>
           <Navbar.Brand>
             <img
@@ -25,10 +20,7 @@ const NavBar = () => {
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle />
-        <Navbar.Collapse
-          className="justify-content-end"
-          style={{color: "rgb(114, 111, 111)"}}
-        >
+        <Navbar.Collapse className="justify-content-end">
           <Nav className="justify-content-end">
             <Link
               activeClass="active"
